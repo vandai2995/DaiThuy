@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IoT Automatic Farm</title>
+    <script src="jquery.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="xuly.js"> </script>
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+
+  </head>
+  <body>
+  <div id="wrapper">
+    <div id="tieuDe" align="center">
+      <h3 style="font-family: Helvetica;color: #7b98e5;font-size: 40px">AUTOMATIC FARM</h3>
+    </div>
+    <div id="hienThi" align="center">
+      <div id="temperatue">
+          <p id="displayTemp">
+          <img src = 'temperature.jpg' id="tempImg" />00.00
+          </p>
+      </div>
+          <p id="displayHum">
+          <img src = 'humidity.jpg' id="humImg" />00.00
+          </p>
+
+    </div>
+
+    <div id="dieuKhien">
+      <div id="left" align="right">
+      <input type="button" value="LIGHT ON" id="btnLightOn">
+      </div>
+
+      <div id="right"align="left">
+      <input type="button" value="LIGHT OFF" id="btnLightOff">
+      </div>
+
+      <div id="slideContainer" align ="center">
+        <br><br>
+        <input type="range" min="0" max="255" value="127" class="slider" id="myRange">
+        <p>Speed: <span id="demo"></span></p>
+      </div>
+    </div>
+    <div id="option" align="center">
+        <input type = "button" value = "Automation" id="btnAutomation">
+        <input type = "button" value = "Controlling" id="btnControlling">
+    </div>
+  </div>
+  <script>
+
+  </script>
+  </body>
+</html>
