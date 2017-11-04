@@ -1,4 +1,4 @@
-var socket = io("http://localhost:3000");
+var socket = io("http://demoiotfarm.herokuapp.com/");
 
 socket.on("server-send-sensor-data", function(data_temp,data_humidity){
   $("#displayTemp").html("");
